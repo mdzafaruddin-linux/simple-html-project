@@ -19,7 +19,7 @@ pipeline {
 
         stage('Publish HTML Report') {
             steps {
-                publishHTML (target : [
+                publishHTML(target: [
                     allowMissing: false,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
@@ -28,6 +28,6 @@ pipeline {
                     reportName: 'HTML Report'
                 ])
             }
-        }
-    }
+        }
+    }
 }
